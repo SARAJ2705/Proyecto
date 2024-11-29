@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             nombre: 'Mochila al 100%',
             precio: 150000,
-            imagen: 'assests/img/mochila1.png',
+            imagen: 'assets/img/mochila1.png',
             categoria: 'sombreros'
         },
         {

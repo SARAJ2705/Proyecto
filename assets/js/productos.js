@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             id: 1,
             nombre: 'Postres de 3 leches fresa',
             precio: 3500,
-            imagen: 'assets/img/postre_fresa.jpeg',
+            imagen: 'assets/img/3leche3.jpeg',
             categoria: 'Postres 3 leches'
         },
         {
@@ -18,23 +18,47 @@ document.addEventListener('DOMContentLoaded', () =>{
         },
         {
             id: 3,
-            nombre: 'Pudines personalizados',
+            nombre: 'Tortas personalizados',
             precio: 50000,
             imagen: 'assets/img/pudin.png',
             categoria: 'Otros productos'
 
-        }
+        },
+        {
+            id: 4,
+            nombre: 'Palillo de Donas',
+            precio: 8000,
+            imagen: 'assets/img/pudin.png',
+            categoria: 'Otros productos'
+
+        },
+        {
+            id: 5,
+            nombre: 'Palillo de Donas',
+            precio: 8000,
+            imagen: 'assets/img/pudin.png',
+            categoria: 'Otros productos'
+
+        },
+        {
+            id: 6,
+            nombre: 'Palillo de Donas',
+            precio: 8000,
+            imagen: 'assets/img/pudin.png',
+            categoria: 'Otros productos'
+
+        },
 
     ];
 
     let carrito =[];
     const divisa = '$';
     const DOMitems = document.querySelector('#items');
-    const DOMcarrito = document.querySelector('#carrito');
+    const filtroSelect=document.querySelector('#filtro')
+   /*  const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-    const miLocalStorage = window.localStorage;
-    const filtroSelect = document.getElementById("filtro");
+    const miLocalStorage = window.localStorage; */
 
     // Funciones
 
@@ -48,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () =>{
 
         productosFiltrados.forEach((info) => {
             const miNodo = document.createElement('div');
-            miNodo.classList.add('card', 'col-sm-4');
+            miNodo.classList.add('card', 'col-sm-3');
+            miNodo.style.margin='1em';
+            miNodo.style.border='none'
             
             const miNodoCardBody = document.createElement('div');
             miNodoCardBody.classList.add('card-body');
@@ -56,20 +82,24 @@ document.addEventListener('DOMContentLoaded', () =>{
             const miNodoTitle = document.createElement('h6');
             miNodoTitle.classList.add('card-title');
             miNodoTitle.textContent = info.nombre;
+            miNodoTitle.style.marginTop='20px'
             
             const miNodoImagen = document.createElement('img');
             miNodoImagen.classList.add('img-fluid');
             miNodoImagen.setAttribute('src', info.imagen);
+            miNodoImagen.style.borderRadius='5px'
             
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
             miNodoPrecio.textContent = `${info.precio}${divisa}`;
             
             const miNodoBoton = document.createElement('button');
-            miNodoBoton.classList.add('btn', 'btn-primary');
-            miNodoBoton.textContent = 'Agregar';
-            miNodoBoton.setAttribute('marcador', info.id);
-            miNodoBoton.addEventListener('click', anadirProductoAlCarrito);
+            miNodoBoton.classList.add('btn', 'btn-light');
+            miNodoBoton.style.color='#fff'
+            miNodoBoton.style.backgroundColor='#ff0088';
+            miNodoBoton.textContent = 'Comprar';
+            /* miNodoBoton.setAttribute('marcador', info.id);
+            miNodoBoton.addEventListener('click', anadirProductoAlCarrito); */
 
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
@@ -79,6 +109,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             DOMitems.appendChild(miNodo);
         });
 
-}
+    }
+
+    filtroSelect.addEventListener('change', renderizarProductos);
     renderizarProductos();
 });
