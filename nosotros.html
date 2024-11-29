@@ -11,8 +11,43 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy" rel="stylesheet">
 </head>
 <body>
+    <!--Configuracion para la barra de navegación-->
+    <style>
+        .navbar {
+            padding: 1em 2em;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-right: 3em;
+            margin-left: 3em;
+        }
+
+        .container-logo img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container-logo img {
+                max-width: 80px;
+                margin-top: 10px;
+            }
+        }
+    </style>
  
     <!-- Inicio Barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #fae5f0;">
@@ -20,45 +55,100 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
-           
-            <div class="container-logo" style="justify-content: center; position: absolute; left: 43%; @media (max-width: 800spx){
-                img{
-                    width: 8px;
-                }
-            }">
-                <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="30%" style="border-radius: 300% ;">
-            </div>
 
             <div class="collapse navbar-collapse mt-4 mb-4" id="navbarNav">
                 
                 <ul class="navbar-nav" style="margin: auto;">
-                    <li class="nav-item" style="margin-right: 3em; margin-left: 2em;">
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" style="color:rgb(206, 26, 146)" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item" style="margin-right: 3em; margin-left: 2em;">
+                    <li class="nav-item">
                         <a class="nav-link" href="nosotros.html" style="color:rgb(206, 26, 146)">Nosotros</a>
                     </li>
                     <li style="width: 50px;">
                         
                     </li>
-                    <li class="nav-item" style="margin-right: 3em; margin-left: 2em;">
+                    <li class="nav-item">
                         <a class="nav-link" href="productos.html" style="color:rgb(206, 26, 146)">Productos</a>
                     </li>
-                    <li class="nav-item" style="margin-right: 3em; margin-left: 2em;">
+                    <li class="nav-item">
                         <a class="nav-link" href="#" style="color:rgb(206, 26, 146)">Contactos</a>
                     </li>
                 </ul>
+            </div>
+            
+            <div class="container-logo" style="justify-content: center; position: absolute; margin-right: 1em; left: 43%;">
+                <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="150">
             </div>
         </div>
      </nav>
     <!--Fin Barra de navegacion-->
 
-    <!-- Inicio de seccion -->
+    <!-- Inicio de nosotros -->
 
-     <br><br><br><br><br>
+    <section class="bg-ligth py-5" style="background-color: #ffa7d6;">
+        
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-md-8 text-ligth">
+                    <h1 style="font-family: Pacifico; color: #b91d71; ">Nosotros</h1>
+                    <h2 style="font-family: Chewy; width: 20px; color: #8b0a4f;">Misión</h2>
+                    <p>
+                        En Delicias Moni queremos endulzar la vida de nuestros clientes con repostería artesanal de calidad excepcional,
+                        elaborada con amor, ingredientes frescos y un toque de creatividad.
+                        Creemos en la importancia de los pequeños momentos dulces y trabajamos para transformar cada postre en una experiencia única 
+                        que combine sabor, arte y felicidad.
+
+                    </p>
+                    
+                    <br>
+                    <h2 style="font-family: Chewy; width: 20px; color: #8b0a4f;">Visión</h2>
+                    <p>Ser la repostería más querida por nuestros clientes, un lugar donde cada dulce creación despierta sonrisas,
+                        celebra momentos especiales y deja recuerdos inolvidables.
+                        Nos proyectamos como un referente en innovación, calidad y pasión por lo dulce, llevando magia a cada mesa y corazón.
+                    </p>
+
+                    <h2 style="font-family: Chewy; width: 20px; color: #8b0a4f;">Objetivos</h2>
+                    <ol>
+                        <li>Crear experiencias memorables: Transformar cada pastel, galleta o postre en un momento mágico que conecte con las emociones 
+                            de nuestros clientes, convirtiéndonos en parte de sus celebraciones más especiales.
+                        </li>
+                        <li>
+                            <b>Garantizar calidad excepcional:</b> Utilizar siempre ingredientes frescos, naturales y de la mejor calidad,
+                            asegurándonos de que cada creación sea un reflejo de nuestra pasión y dedicación por lo que hacemos.
+                        </li>
+                        <li>
+                            <b>Innovar con dulzura:</b> Renovar constantemente nuestro menú con sabores únicos, diseños creativos y presentaciones sorprendentes,
+                            mezclando tendencias modernas con el encanto de lo tradicional.
+                        </li>
+                        <li>
+                            <b>Fomentar la sostenibilidad:</b> Apostar por prácticas responsables que respeten el medio ambiente, 
+                            desde el empaquetado ecoamigable hasta la reducción de desperdicios en nuestra producción.
+                        </li>
+                        <li>
+                            Endulzar todos los paladares: Ofrecer opciones inclusivas para todos, como postres veganos, sin gluten o bajos en azúcar,
+                            para que nadie se quede sin disfrutar de un dulce momento.
+                        </li>
+                    </ol>
 
 
-    <!-- Fin de seccion -->
+
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/fresas.jfif" class="rounded-circle img-fluid border" width="90%">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="assets/img/imagen1.jpg" class="rounded-circle img-fluid border" width="90%">
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Fin de nosotros -->
 
 
     <!-- Inicio de pie -->
