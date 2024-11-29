@@ -16,6 +16,10 @@
 <body>
     <!--Configuracion para la barra de navegación-->
     <style>
+
+        body{
+            background-color: #ffa7d6;
+        }
         .navbar {
             padding: 1em 2em;
         }
@@ -51,7 +55,7 @@
 
 
     <!-- Inicio Barra de navegación-->
-     <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #ffe1f1;">
+     <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #ffe1f1">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
@@ -84,26 +88,35 @@
      </nav>
     <!--Fin Barra de navegacion-->
   
+     <br><br>
 
-    <div class="payment-form">
-        <h1 class="h4 mb-4 text-center">Datos de Pago</h1>
-        <form id="payment-form">
+    <div class="payment-form" style="background-color: #ffa7d6 !important;">
+        <h1 class="h4 mb-4 text-center" style="color: #ff0088; font-family: Chewy; text-align: center; font-size: 40px;">Datos de Pago</h1>
+        <form class="col-md-9 m-auto" method="post" role="form" style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+           <div class="row">
             <div class="form-group">
-                <label for="card-number">Número de Tarjeta</label>
-                <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+                <label for="card-number" style="color: #b91d71;">Número de Tarjeta</label>
+                <input type="text" class="form-control" id="card-number" placeholder="1432 0002 6537 1928" required style="border: 2px solid #ff0088;">
+            </div>
+            <br><br>
+            <div class="form-group">
+                <br>
+                <label for="expiry-date" style="color: #b91d71;">Fecha de expiración</label>
+                <input type="text" class="form-control" id="expiry-date" placeholder="MM/AA" required style="border: 2px solid #ff0088;">
             </div>
             <div class="form-group">
-                <label for="expiry-date">Fecha de expiración (MM/AA)</label>
-                <input type="text" class="form-control" id="expiry-date" placeholder="MM/AA" required>
+                <br>
+                <label for="cvc" style="color: #b91d71;">CVC</label>
+                <input type="text" class="form-control" id="cvc" placeholder="456" required style="border: 2px solid #ff0088;">
             </div>
-            <div class="form-group">
-                <label for="cvc">CVC</label>
-                <input type="text" class="form-control" id="cvc" placeholder="123" required>
+            </div class="form-group">
+            <br>
+            <button type="submit" class="btn btn-lg px-3" style="background-color: #ff0088; color: #fff; margin-left: 12.5cm;">Pagar</button>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Pagar</button>
         </form>
     </div>
 
+    <br><br>
 
 <!-- Inicio de pie -->
     <footer class="bg-ligth" style="background-color: rgb(243, 123, 189);" id="templatemo_footer">
