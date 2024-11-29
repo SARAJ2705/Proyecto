@@ -5,50 +5,61 @@ document.addEventListener('DOMContentLoaded', () =>{
         {
             id: 1,
             nombre: 'Postres de 3 leches fresa',
-            precio: 3500,
-            imagen: 'assets/img/3leche3.jpeg',
-            categoria: 'Postres 3 leches'
+            precioInt: 3500,
+            precio: '3.500',
+            imagen: 'assets/img/3leche2.jpg',
+            categoria: 'Postres 3 leches',
+            menu: '3leches.html'
         },
         {
             id: 2,
-            nombre: 'Deditos de queso',
-            precio: 12000,
+            nombre: 'Bandeja de Deditos',
+            precioInt: 12000,
+            precio: '12.000',
             imagen: 'assets/img/deditos.jpeg',
-            categoria: 'Deditos'
+            categoria: 'Deditos',
+            menu: 'deditos.html'
         },
         {
             id: 3,
             nombre: 'Tortas personalizados',
-            precio: 50000,
-            imagen: 'assets/img/pudin.png',
-            categoria: 'Otros productos'
+            precioInt: 50000,
+            precio: '50.000',
+            imagen: 'assets/img/torta1.jpeg',
+            categoria: 'Otros productos',
+            menu: 'tortapersonalizada.html'
 
         },
         {
             id: 4,
             nombre: 'Palillo de Donas',
-            precio: 8000,
-            imagen: 'assets/img/pudin.png',
-            categoria: 'Otros productos'
+            precioInt: 8000,
+            precio: '8.000',
+            imagen: 'assets/img/dona1.jpeg',
+            categoria: 'Otros productos',
+            menu: 'donas.html'
 
         },
         {
             id: 5,
-            nombre: 'Palillo de Donas',
-            precio: 8000,
-            imagen: 'assets/img/pudin.png',
-            categoria: 'Otros productos'
+            nombre: 'Postre Napoleón',
+            precioInt: 36000,
+            precio: '36.000',
+            imagen: 'assets/img/napoleon1.jpeg',
+            categoria: 'Otros productos',
+            menu: 'napoleon.html'
 
         },
         {
             id: 6,
-            nombre: 'Palillo de Donas',
-            precio: 8000,
-            imagen: 'assets/img/pudin.png',
-            categoria: 'Otros productos'
+            nombre: 'Fresas con Crema',
+            precioInt: 15000,
+            precio: '15.000',
+            imagen: 'assets/img/fresas.jpg',
+            categoria: 'Otros productos',
+            menu: 'fresas.html'
 
-        },
-
+        }
     ];
 
     let carrito =[];
@@ -98,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             miNodoBoton.style.color='#fff'
             miNodoBoton.style.backgroundColor='#ff0088';
             miNodoBoton.textContent = 'Comprar';
-            /* miNodoBoton.setAttribute('marcador', info.id);
-            miNodoBoton.addEventListener('click', anadirProductoAlCarrito); */
+            /* miNodoBoton.setAttribute('marcador', info.id);*/
+           //miNodoBoton.addEventListener('click', info.menu); 
 
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
