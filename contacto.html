@@ -13,55 +13,76 @@
     <link rel="stylesheet" href="assests/css/fontawesome.min.css">
 </head>
 <body>
-    <!--Inicio de  encabezado-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-ligth" id="templatemo_nav_top">
-        <div  class="container text-ligth">
-            <div class="w-100 d-flex  justify-content-between">
-                <div>
-                    <i class="fa fa-envelope fa-inverse"></i>
-                    <a class="navbar-sm-brand text-ligth text-decoration-none" href="mailto:info@prodart.com">info@prodart-com</a>
-                    <i class="fa fa-phone fa-inverse"></i>
-                    <a a class="navbar-sm-brand text-ligth text-decoration-none" href="tel: 057-315-220-35-20">057-315-220-35-20</a>
-                </div>
-                <div>
-                    <a class="text-ligth" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-ligth" href="https://www.instagram.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-ligth" href="https://twitter.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+    <!--Configuracion para la barra de navegación-->
+    <style>
+        .navbar {
+            padding: 1em 2em;
+        }
 
-                </div>
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-right: 3em;
+            margin-left: 3em;
+        }
+
+        .container-logo img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container-logo img {
+                max-width: 80px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+    <!-- Inicio Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #fae5f0;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse mt-4 mb-4" id="navbarNav">
+                
+                <ul class="navbar-nav" style="margin: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color:rgb(206, 26, 146)" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html" style="color:rgb(206, 26, 146)">Nosotros</a>
+                    </li>
+                    <li style="width: 50px;">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" style="color:rgb(206, 26, 146)">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:rgb(206, 26, 146)">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="container-logo" style="justify-content: center; position: absolute; margin-right: 1em; left: 43%;">
+                <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="150">
             </div>
         </div>
-    </nav> 
-<!--Fin Encabezado--> 
+    </nav>
+    <!--Fin Barra de navegacion-->
 
-<!--Incio menu-->
-<nav class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="opciones">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="acercade.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="compras.html">Compras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!--Fin menu--> 
 <!--Inicio del cuerpo de contacrto-->
 <div class="container-fluid bg-light py-5">
     <div class="col-md-6 m-auto text-center">
