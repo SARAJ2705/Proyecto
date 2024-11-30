@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         {
             id: 1,
             nombre: 'Postres de 3 leches fresa',
-            precioInt: 3500,
-            precio: '3.500',
+            precioInt: 4000,
+            precio: '4.000',
             imagen: 'assets/img/3leche2.jpg',
             categoria: 'Postres 3 leches',
             menu: '3leches.html'
