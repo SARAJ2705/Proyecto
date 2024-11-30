@@ -35,6 +35,10 @@
             height: auto;
         }
 
+        #barra{
+            margin-left: 4em;
+        }
+
         /* Responsive design */
         @media (max-width: 800px) {
             .navbar-nav {
@@ -44,6 +48,10 @@
             .container-logo img {
                 max-width: 80px;
                 margin-top: 10px;
+            }
+
+            #barra{
+                margin: 0;
             }
         }
     </style>
@@ -84,9 +92,10 @@
     <!--Fin Barra de navegacion-->
 
     <!-- Inicio de contenido -->
-    <div class="container py-5">
-        <div class =" row">
-            <div class="col-lg-3">
+    <section style="background-color: #fdc1df;" > 
+    <div class="container py-5" style="background-color:  #fdc1df;">
+        <div class ="row">
+            <div class="col-lg-3" style="padding: 1em; border-radius: 5px; background-color: #fca5d3;">
                 <h1 class="h2 pb-4">Categorias</h1>
 
                 <ul class="list-unstyled templatemo-accordion">
@@ -166,8 +175,8 @@
             <div class="col-lg-9">
                 <div class="row">
         
-                    <div class="col-md-6 pb-4">
-                        <div class="d-flex">
+                    <div class="col-md-6 pb-4" >
+                        <div class="d-flex" id="barra">
                             <select id="filtro" class="form-control">
                                 <option value="todas">Todas</option>
                                 <option value="Postres 3 leches">Postres 3 leches</option>
@@ -186,7 +195,7 @@
             </div>
         </div>
     </div>
-
+</section>
     <!--Mostrar los contenidos-->
 
     

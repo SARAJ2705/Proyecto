@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             const miNodo = document.createElement('div');
             miNodo.classList.add('card', 'col-sm-3');
             miNodo.style.margin='1em';
-            miNodo.style.border='none'
+            miNodo.style.border='none';
             
             const miNodoCardBody = document.createElement('div');
             miNodoCardBody.classList.add('card-body');
