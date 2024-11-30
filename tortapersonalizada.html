@@ -53,6 +53,19 @@
         }
     </style>
 
+    <style>
+        .thumbnail {
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+    
+        .thumbnail:hover {
+            transform: scale(1.1);
+            border-color: #ffa7d6;
+        }
+    </style>
+    
 
     <!-- Inicio Barra de navegación-->
      <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #ffe1f1">
@@ -88,110 +101,121 @@
      </nav>
     <!--Fin Barra de navegacion-->
   
-    <!-- cuerpo-->
-    <section class="bg-light" style="background-color: #ffa7d6 !important;">
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col-lg-5 mt-5">
-                    <div class="card mb-3">
-                        <img class="card-img img-fluid" src="assets/img/torta1.jpeg">
-                    </div>
-                    <div class="row">
-                        <div class="col-1 align-self-center">
-                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
-                                <i class="text-dark fas fa-chevron-left"></i>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-                        </div>
-                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
-                            <div class="carousel-inner product-links-wap" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/torta2.jpeg">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/torta3.jpeg">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="assets/img/torta4.jpeg">
-                                            </a>
-                                        </div>
+  <!-- cuerpo-->
+  <section class="bg-light" style="background-color: #ffa7d6 !important;">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-5 mt-5">
+                <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel" >
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active" style="background-color: rgb(255, 50, 118);"></li>
+                        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1" style="background-color: rgb(255, 50, 118);"></li>
+                        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2" style="background-color: rgb(255, 50, 118);"></li>
+                        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2" style="background-color: rgb(255, 50, 118);"></li>
+                    </ol>        
+                    <div class="carousel-inner" style="background-color: rgb(255, 163, 227);">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row p-5">
+                                    <div class="mx-auto col-12">
+                                        <img class="img-fluid large-image" src="assets/img/torta1.jpeg" alt="imagen2" width="90%" style="margin-left: 0.5cm; margin-top: 0.8cm;">
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-1 align-self-center">
-                            <a href="#multi-item-example" role="button" data-bs-slide="next">
-                                <i class="text-dark fas fa-chevron-right"></i>
-                                <span class="sr-only">Siguiente</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 mt-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="h2" style="color: #ff0088; font-family: Chewy; font-size: 50px !important;">Torta Personalizada</h1>
-                            <p class="h3 py-2">$50.000</p>
-                            <p class="py-2">
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <span class="list-inline-item text-dark">Rating 4.1 | 30 Comentarios</span>
-                            </p>
-
-                            <h6>Descripción:</h6>
-                            <p>Crema, pudín, galleta o glaciale.</p>
-                            <div class="form-group">
-                                <label for="name" style="color: #b91d71;">Ingresa el color que deseas: </label>
-                                <input type="text" class="form-control" id="name" placeholder="" required style="border: 2px solid #ff0088;">
-                            </div>
-                            <div class="form-group">
-                                <br>
-                                <label for="name" style="color: #b91d71;">Describe la temática de tu torta: </label>
-                                <input type="text" class="form-control" id="name" placeholder="" required style="border: 2px solid #ff0088;">
-                            </div>
-                            <br>
-                            <form action="" method="GET">
-                                <input type="hidden" name="product-title" value="Activewear">
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <ul class="list-inline pb-3">
-                                            <li class="list-inline-item text-right">
-                                                Cantidad
-                                                <input type="hidden" name="product-quanity" id="product-quanity" value="1">
-                                            </li>
-                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-minus" style="background-color: #ff0088 !important;">-</span></li>
-                                            <li class="list-inline-item"><span class="badge bg-secondary" id="var-value" style="background-color: #ffeff8 !important; color: #b91d71;">1</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-plus" style="background-color: #ff0088 !important;">+</span></li>
-                                        </ul>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row p-5">
+                                    <div class="mx-auto col-12">
+                                        <img class="img-fluid large-image" src="assets/img/torta2.jpeg" alt="imagen2" width="80%" style="margin-left: 1cm; margin-top: 0.8cm;">
                                     </div>
                                 </div>
-                                <div class="row pb-3" style="display: flex; justify-content: center;">
-                                    <div class="col-lg-6 d-grid">
-                                        <button class="btn btn-info" style="background-color: #df127f; color: white; border: #b91d71 !important;">
-                                            <a href="compras.html" target="target_blank" style="color: white; text-decoration: none;">Agrega al Carrito</a>
-                                        </button>        
-                                    </div>   
-                                </div>                            
-                            </form>
-
+                            </div>
                         </div>
-                    </div>                   
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row p-5">
+                                    <div class="mx-auto col-12">
+                                        <img class="img-fluid large-image" src="assets/img/torta3.jpeg" alt="imagen2" width="80%" style="margin-left: 1cm; margin-top: 0.8cm;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row p-5">
+                                    <div class="mx-auto col-12">
+                                        <img class="img-fluid large-image" src="assets/img/torta4.jpeg" alt="imagen2" width="80%" style="margin-left: 1cm; margin-top: 0.8cm;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left" style="color: rgb(255, 3, 171) !important;"></i>
+                    </a>
+                    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+                        <i class="fas fa-chevron-right" style="color: rgb(255, 3, 171) !important;"></i>
+                    </a>
                 </div>
             </div>
+            <div class="col-lg-7 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h2" style="color: #ff0088; font-family: Chewy; font-size: 50px !important;">Torta Personalizada</h1>
+                        <p class="h3 py-2">$50.000</p>
+                        <p class="py-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            <span class="list-inline-item text-dark">Rating 4.1 | 30 Comentarios</span>
+                        </p>
+
+                        <h6>Descripción:</h6>
+                        <p>Crema, pudín, galleta o glaciale.</p>
+                        <div class="form-group">
+                            <label for="name" style="color: #b91d71;">Ingresa el color que deseas: </label>
+                            <input type="text" class="form-control" id="name" placeholder="" required style="border: 2px solid #ff0088;">
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <label for="name" style="color: #b91d71;">Describe la temática de tu torta: </label>
+                            <input type="text" class="form-control" id="name" placeholder="" required style="border: 2px solid #ff0088;">
+                        </div>
+                        <br>
+                        <form action="" method="GET">
+                            <input type="hidden" name="product-title" value="Activewear">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <ul class="list-inline pb-3">
+                                        <li class="list-inline-item text-right">
+                                            Cantidad
+                                            <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                                        </li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-minus" style="background-color: #ff0088 !important;">-</span></li>
+                                        <li class="list-inline-item"><span class="badge bg-secondary" id="var-value" style="background-color: #ffeff8 !important; color: #b91d71;">1</span></li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-plus" style="background-color: #ff0088 !important;">+</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row pb-3" style="display: flex; justify-content: center;">
+                                <div class="col-lg-6 d-grid">
+                                    <button class="btn btn-info" style="background-color: #df127f; color: white; border: #b91d71 !important;">
+                                        <a href="compras.html" target="target_blank" style="color: white; text-decoration: none;">Agrega al Carrito</a>
+                                    </button>        
+                                </div>   
+                            </div>                            
+                        </form>
+
+                    </div>
+                </div>                   
+            </div>
         </div>
-    </section>
-    <!-- fin cuerpo-->
+    </div>
+</section>
+<!-- fin cuerpo-->
 
 <!-- Inicio de pie -->
     <footer class="bg-ligth" style="background-color: rgb(243, 123, 189);" id="templatemo_footer">
@@ -260,3 +284,5 @@
 
 </body>
 </html>
+
+
