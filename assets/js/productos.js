@@ -112,6 +112,11 @@ document.addEventListener('DOMContentLoaded', () =>{
             /* miNodoBoton.setAttribute('marcador', info.id);*/
            //miNodoBoton.addEventListener('click', info.menu); 
 
+
+           miNodoBoton.addEventListener('click', () => {
+            window.location.href = info.menu;
+            });
+
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
             miNodoCardBody.appendChild(miNodoPrecio);
