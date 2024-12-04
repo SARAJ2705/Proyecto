@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chewy" rel="stylesheet">
@@ -92,6 +93,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html" style="color:rgb(206, 26, 146)">Contactos</a>
                     </li>
+                    <li class="submenu">
+                        <a id="text-carro">carrito</a>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="col-2 mt-2 container">
+                                <thhead>
+                                    <tr>
+                                        <th>Curso</th>
+                                        <th>Curso</th>
+                                        <th>Curso</th>
+                                        <th>Curso</th>
+                                        <th></th>
+                                    </tr>
+                                </thhead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+
+
+                        </div>
+                        
+                    </li>
                 </ul>
             </div>
             <div class="container-logo" style="justify-content: center; position: absolute; margin-right: 1em; left: 43%;">
@@ -118,7 +141,7 @@
                             <div class="container">
                                 <div class="row p-5">
                                     <div class="mx-auto col-12">
-                                        <img class="img-fluid large-image" src="assets/img/3leche1.jpg" alt="imagen2" width="90%" style="margin-left: 0.5cm; margin-top: 2cm;">
+                                        <img class="img-fluid large-image imagen-carrito" src="assets/img/3leche1.jpg" alt="imagen2" width="90%" style="margin-left: 0.5cm; margin-top: 2cm;">
                                     </div>
                                 </div>
                             </div>
@@ -159,11 +182,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-7 mt-5">
+            <div class="col-lg-7 mt-5 cursos">
                 <div class="card">
                     <div class="card-body">
                         <h1 class="h2" style="color: #ff0088; font-family: Chewy; font-size: 50px !important;">Postre 3 Leches</h1>
-                        <p class="h3 py-2">$4.000 (Al mayor)</p>
+                        <p class="h3 py-2 precio">$4.000 (Al mayor)</p>
                         <p class="py-2">
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-warning"></i>
@@ -193,8 +216,8 @@
                             </div>
                             <div class="row pb-3" style="display: flex; justify-content: center;">
                                 <div class="col-lg-6 d-grid">
-                                    <button class="btn btn-info" style="background-color: #df127f; color: white; border: #b91d71 !important;">
-                                        <a href="compras.html" target="target_blank" style="color: white; text-decoration: none;">Agrega al Carrito</a>
+                                    <button class="btn btn-info agregar-carrito" style="background-color: #df127f; color: white; border: #b91d71 !important;">
+                                        <a href="#" target="target_blank" style="color: white; text-decoration: none;" data-id="1">Agrega al Carrito</a>
                                     </button>        
                                 </div>   
                             </div>                            
@@ -272,7 +295,7 @@
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> <!-- Carrusel-->
-
+    <script src="assets/js/carrito2.js"></script>
 </body>
 </html>
 

@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
     ];
 
-    let carrito =[];
+    /* let carrito =[]; */
     const divisa = '$';
     const DOMitems = document.querySelector('#items');
     const filtroSelect=document.querySelector('#filtro')
