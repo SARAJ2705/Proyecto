@@ -77,43 +77,44 @@
            
             <div class="collapse navbar-collapse mt-4 mb-4" id="navbarNav">
                 
-                <ul class="navbar-nav" style="margin: auto; margin-right: 3.5cm;">
-                    <li class="nav-item">
+                <ul class="navbar-nav" style="margin: auto; margin-right: 7cm;">
+                    <li class="nav-item" style="margin-right: 3.5cm;">
                         <a class="nav-link active" aria-current="page" style="color:rgb(206, 26, 146)" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item" style="margin-right: 5.5cm;">
                         <a class="nav-link" href="nosotros.html" style="color:rgb(206, 26, 146)">Nosotros</a>
                     </li>
                     <li style="width: 50px;">
                         
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" style="margin-right: 3.5cm;">
                         <a class="nav-link" href="productos.html" style="color:rgb(206, 26, 146)">Productos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" style="margin-right: 2.5cm;">
                         <a class="nav-link" href="contacto.html" style="color:rgb(206, 26, 146)">Contactos</a>
                     </li>
                     <li class="submenu">
-                        <a id="text-carro">carrito</a>
-                        <div id="carrito">
-                            <table id="lista-carrito" class="col-2 mt-2 container">
-                                <thhead>
-                                    <tr>
-                                        <th>Curso</th>
-                                        <th>Curso</th>
-                                        <th>Curso</th>
-                                        <th>Curso</th>
-                                        <th></th>
-                                    </tr>
-                                </thhead>
-                                <tbody></tbody>
+                        <a id="text-carro">
+                            <img src="assets/img/carro.png" alt="" width="75%">
+                        </a>
+                         <div id="carrito" style="border: 5px solid #cf026f; border-radius: 10px; padding: 20px; text-align: center; width: 80%; margin: auto;">
+                            <table id="lista-carrito" class="col-2 mt-2 container" style="margin: 0 auto;">
+                            <h2 style="display: flex; justify-content: center; color: #cf026f; font-family: Chewy;">Compras</h2>
+                            <thead>
+                           <tr>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
                             </table>
 
-                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-
-
+                            <button class="btn btn-info agregar-carrito" style="background-color: #df127f; color: white; border: #b91d71 !important; margin-top: 20px;">
+                                <a href="pago.html" target="_blank" style="color: white; text-decoration: none;" id="vaciar-carrito" class="button u-full-width">Pagar</a>
+                            </button>
                         </div>
-                        
                     </li>
                 </ul>
             </div>
@@ -121,7 +122,6 @@
                 <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="150" >
             </div>
         </div>
-            <img src="assets/img/carro.png" alt="" width="4%">
      </nav>
     <!--Fin Barra de navegacion-->
   
@@ -299,5 +299,3 @@
     <script src="assets/js/carrito2.js"></script>
 </body>
 </html>
-
-
