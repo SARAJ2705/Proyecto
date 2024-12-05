@@ -69,7 +69,7 @@
     
 
     <!-- Inicio Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #ffe1f1;">
+     <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow" style="background-color: #ffe1f1;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
@@ -77,21 +77,47 @@
            
             <div class="collapse navbar-collapse mt-4 mb-4" id="navbarNav">
                 
-                <ul class="navbar-nav" style="margin: auto; margin-right: 3.5cm;">
-                    <li class="nav-item">
+                <ul class="navbar-nav" style="margin: auto; margin-right: 7cm;">
+                    <li class="nav-item" style="margin-right: 3.5cm;">
                         <a class="nav-link active" aria-current="page" style="color:rgb(206, 26, 146)" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item" style="margin-right: 5.5cm;">
                         <a class="nav-link" href="nosotros.html" style="color:rgb(206, 26, 146)">Nosotros</a>
                     </li>
                     <li style="width: 50px;">
                         
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" style="margin-right: 3.5cm;">
                         <a class="nav-link" href="productos.html" style="color:rgb(206, 26, 146)">Productos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" style="margin-right: 2.5cm;">
                         <a class="nav-link" href="contacto.html" style="color:rgb(206, 26, 146)">Contactos</a>
+                    </li>
+                    <li class="submenu">
+                        <a id="text-carro">
+                            <img src="assets/img/carro.png" alt="" width="75%">
+                        </a>
+                        <div id="carrito" style="border: 5px solid #cf026f; border-radius: 10px; padding: 20px; text-align: center; width: 80%; margin: auto; background-color: #ffe9f5;">
+                            <table id="lista-carrito" class="col-2 mt-2 container" style="margin: 0 auto;">
+                            <h1 style="display: flex; justify-content: center; color: #cf026f; font-family: Chewy;">Compras</h1>
+                            <thead>
+                           <tr>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            <th>Curso</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                            </table>
+
+                            <button class="btn btn-info agregar-carrito" style="background-color: #df127f; color: white; border: #b91d71 !important; margin-top: 20px;">
+                                <a href="pago.html" target="_blank" style="color: white; text-decoration: none;" id="vaciar-carrito" class="button u-full-width">Pagar</a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
                     </li>
                 </ul>
             </div>
@@ -99,7 +125,6 @@
                 <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="150" >
             </div>
         </div>
-            <img src="assets/img/carro.png" alt="" width="4%">
      </nav>
     <!--Fin Barra de navegacion-->
   
