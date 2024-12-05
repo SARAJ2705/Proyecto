@@ -29,6 +29,19 @@
             margin-left: 3em;
         }
 
+        .pay{
+            background-color: #d400a6;
+        }
+
+        .pay a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .pay:hover{
+            background-color: #8a006c;
+        }
+
         .container-logo img {
             border-radius: 50%;
             max-width: 150px;
@@ -37,6 +50,11 @@
 
         #barra{
             margin-left: 4em;
+        }
+
+        #carrito-value{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #d400a6;
         }
 
         /* Responsive design */
@@ -87,7 +105,8 @@
                 <img src="assets/img/logo-dmoni.png" alt="Delicias Moni Logo" width="150" >
             </div>
         </div>
-            <img src="assets/img/carro.png" alt="" width="4%">
+        <span id="carrito-value"></span>
+        <img src="assets/img/carro.png" alt="" width="4%">
      </nav>
     <!--Fin Barra de navegacion-->
 
@@ -188,10 +207,27 @@
                     </div>
                 </div>
         
-                <div class="container mx-auto">
-                        <main id="items" class="row col justify-content-center"></main>
-                    
-                </div>    
+                <div class="container">
+                    <div class="row">
+                        <!-- Elementos generados a partir del JSON -->
+                        <main id="items" class="col-sm-9 row"></main>
+                        <!-- Carrito -->
+                        <aside class="col-sm-3">
+                            <h3>Carrito</h3>
+                            <!-- Elementos del carrito -->
+                            <ul id="carrito" class="list-group"></ul>
+                            <hr>
+                            <!-- Precio total -->
+                            <p class="text-right">Total: $ <span id="total"></span></p>
+                            <button id="boton-vaciar" class="btn btn-danger" title="Vaciar el carrito">Vaciar</button>
+                            <button class="btn btn-ligth mx-2 pay" >
+                            <a href="pago.html" target="target_blank">Pagar</a>
+                            </button>
+                            
+                        </aside>
+                    </div>
+                </div>
+                <!--Final de carrito-->   
             </div>
         </div>
     </div>
